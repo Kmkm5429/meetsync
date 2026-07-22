@@ -1,0 +1,33 @@
+{
+  "entities": {
+    "rooms": {
+      "title": "Room",
+      "description": "Meeting room for scheduling",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "createdBy": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "startDate": { "type": "string" },
+        "endDate": { "type": "string" },
+        "startHour": { "type": "number" },
+        "endHour": { "type": "number" }
+      },
+      "required": ["title", "startDate", "endDate"]
+    },
+    "participants": {
+      "title": "Participant",
+      "description": "Participant schedule and availability",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "nickname": { "type": "string" },
+        "availableSlots": { "type": "array" },
+        "workSchedule": { "type": "array" }
+      },
+      "required": ["nickname", "uid"]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MeetSync",
+  "description": "Mobile-first meeting availability and schedule matching web application with real-time sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
